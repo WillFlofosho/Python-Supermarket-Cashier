@@ -23,16 +23,7 @@ def enterProducts():
 
 def getPrice(product, quantity):
     #defined dictionary with product as key and price as value
-    priceData = {
-        'Biscuit': 3,
-        'Chicken': 5,
-        'Egg': 1,
-        'Fish': 3,
-        'Coke': 2,
-        'Bread': 2,
-        'Apple': 3,
-        'Onion': 3
-    }
+    priceData = dict(Biscuit=3, Chicken=5, Egg=1, Fish=3, Coke=2, Bread=2, Apple=3, Onion=3, Carrot=1, Candy=2)
     #fetch corresponding value and multiply with quantity to get the subtotal
     subtotal = priceData[product] * quantity
     print(product + ':$' + str(priceData[product]) + 'x' + str(quantity) + '=' + str(subtotal))
